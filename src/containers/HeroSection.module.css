@@ -1,0 +1,13 @@
+.HeroSection {
+  background-image: url(../../public/admin/hero/hero.webp);
+  background-size: cover;
+
+  background-position: center;
+}
+/* 
+@media screen and (min-width: 900px) {
+  .HeroSection {
+    background-position: right;
+    padding: 0 3rem;
+  }
+} */
