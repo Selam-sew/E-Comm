@@ -14,7 +14,7 @@ export default function App() {
   const [postPerPage, SetPostPerPage] = useState(3);
   const [details , setDetails] = useState({})
   return (
-    <BrowserRouter basename="E-comm">
+    <BrowserRouter basename="e-commerce">
       <Detail.Provider value={{
         details, 
         setDetails
