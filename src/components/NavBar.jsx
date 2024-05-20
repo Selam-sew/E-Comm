@@ -39,9 +39,9 @@ export default function NavBar() {
         <NavLink className="text-red" to="/">
           Home
         </NavLink>
-        <NavLink to="/shop">shop</NavLink>
+        <NavLink to="#/shop">shop</NavLink>
 
-        <NavLink to="/cart">
+        <NavLink to="#/cart">
           <img src={cart} alt="icons" />
           {cartItems.length > 0 && (
             <span className="relative bottom-9 text-white bg-red-500 rounded-[50%] px-1 left-4">
@@ -69,7 +69,7 @@ export default function NavBar() {
           <NavLink to="/shop" className="border-b">
             shop
           </NavLink>
-          <NavLink to="/cart">
+          <NavLink to="#/cart">
             <img src={cart} alt="icons" />
             {cartItems.length > 0 && (
               <span className="relative bottom-10 text-white  bg-red-500 rounded-[50%] px-1 left-4">

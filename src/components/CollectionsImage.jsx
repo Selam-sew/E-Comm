@@ -15,7 +15,7 @@ export default function CollectionsImage({ image, title, Description, Price }) {
     <div className="bg-[#E6E5E5] text-left p-2 lg:px-10 py-5 flex flex-col justify-between">
       {" "}
       <div>
-        <NavLink to='/details' onClick={()=>setDetails(item)}>
+        <NavLink to='#/details' onClick={()=>setDetails(item)}>
                   <img src={image} alt="product image" />
 
         </NavLink>
@@ -25,7 +25,7 @@ export default function CollectionsImage({ image, title, Description, Price }) {
       </div>
       <div className="flex justify-between mt-5 flex-col md:flex-row gap-3 ">
         <p className=" ">{Price}$</p>
-        <NavLink to='/cart'>
+        <NavLink to='#/cart'>
           <button className="bg-black text-white px-2 rounded-sm py-1" onClick={()=> addToCart(item)} >
             Buy Now{" "}
           </button>

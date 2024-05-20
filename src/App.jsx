@@ -14,7 +14,7 @@ export default function App() {
   const [postPerPage, SetPostPerPage] = useState(3);
   const [details , setDetails] = useState({})
   return (
-    <BrowserRouter >
+    <HashRouter >
       <Detail.Provider value={{
         details, 
         setDetails
@@ -33,10 +33,10 @@ export default function App() {
 
           <Routes>
             <Route element={<AppLayout />}>
-              <Route path="/vite-react-router/" element={<Home />} />
-                <Route path="/vite-react-router/shop" element={<Shop />} />
-                  <Route path="/vite-react-router/cart" element={<Cart />} />
-                  <Route path="/vite-react-router/details" element={<Details/>}/>
+              <Route path="/" element={<Home />} />
+                <Route path="#/shop" element={<Shop />} />
+                  <Route path="#/cart" element={<Cart />} />
+                  <Route path="#/details" element={<Details/>}/>
             </Route>
             <Route path="*" element={<h1>Not Found</h1>} />
             </Routes>{" "}
@@ -46,6 +46,6 @@ export default function App() {
         </PaginationContext.Provider>
         </Detail.Provider>
 
-    </BrowserRouter>
+    </HashRouter>
   );
 }
