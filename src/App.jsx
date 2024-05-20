@@ -14,7 +14,6 @@ export default function App() {
   const [postPerPage, SetPostPerPage] = useState(3);
   const [details , setDetails] = useState({})
   return (
-    <BrowserRouter>
       <Detail.Provider value={{
         details, 
         setDetails
@@ -46,6 +45,5 @@ export default function App() {
         </PaginationContext.Provider>
         </Detail.Provider>
 
-    </BrowserRouter>
   );
 }
