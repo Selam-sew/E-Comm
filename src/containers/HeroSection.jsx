@@ -12,7 +12,7 @@ export default function HeroSection() {
         <p className="text-[1.2rem] mx-2 md:text-[1.5rem] md:mb-5">
           Explore a World of Cutting-Edge Tech
         </p>
-        <NavLink to="/shop">
+        <NavLink to="/vite-react-router/shop">
           {" "}
           <button className="border-2 mt-5 mb-10 bg-black text-white border-black rounded-lg p-2 px-7 md:text-[1.2rem]">
             Shop Now
